@@ -1,0 +1,14 @@
+{
+    "short_name": "TRYT",
+    "name": "TRYT",
+    "description": "App template with Ionic 4 Tabs. ",
+    "display": "fullscreen",
+    "orientation": "any",
+    "start_url": "/",
+    "scope": "/",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+
+    ]
+}

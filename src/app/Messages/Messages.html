@@ -1,0 +1,123 @@
+<ion-header _aio-BBD93E36>
+    <ion-toolbar _aio-FF573374 #j_32>
+        <ion-title _aio-A990C151 #j_33>
+            {{ 'Notificaciones' | translate }}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content _aio-EE2DF363>
+    <ion-list _aio-D2763860 #j_10 class="ion-no-padding">
+        <ion-list-header _aio-9149ED65 #j_11 (click)="go()">
+            <ion-label _aio-E7F7C5F9 #j_12>
+                <h1 _aio-6A133CDA #j_13>
+                    <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_13__text')" [ngIfElse]="j_13__default_text">
+                        {{ '' | translate }}
+                    </ng-template>
+                    <ng-template #j_13__default_text>
+                        {{ 'Recent Conversations' | translate }}
+                    </ng-template>
+                </h1>
+                {{ '' | translate }}
+            </ion-label>
+        </ion-list-header>
+        <ion-item _aio-B1B83381 #j_14 *ngFor="let currentItem of __getMapping(currentItem, 'j_14', []);"
+        button="true" detail="false" [routerLink]="['/chat']">
+            <ion-avatar _aio-D56406C8 slot="start">
+                <img #j_15 src="{{__getMapping(currentItem, 'j_15__imageSrc', 'assets/images/finn.jpg', false)}}"
+                alt="{{ 'Image error' | translate }}">
+            </ion-avatar>
+            <ion-label _aio-61BA04AB #j_16>
+                <h2 _aio-827BCAF4 #j_17>
+                    <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_17__text')" [ngIfElse]="j_17__default_text">
+                        {{__getMapping(currentItem, 'j_17__text', '', false) | translate}}
+                    </ng-template>
+                    <ng-template #j_17__default_text>
+                        {{ 'Finn' | translate }}
+                    </ng-template>
+                </h2>
+                <h3 _aio-00BE7EED #j_18>
+                    <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_18__text')" [ngIfElse]="j_18__default_text">
+                        {{__getMapping(currentItem, 'j_18__text', '', false) | translate}}
+                    </ng-template>
+                    <ng-template #j_18__default_text>
+                        {{ 'I\'m a big deal' | translate }}
+                    </ng-template>
+                </h3>
+                <p _aio-2A0CE68A #j_19>
+                    <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_19__text')" [ngIfElse]="j_19__default_text">
+                        {{__getMapping(currentItem, 'j_19__text', '', false) | translate}}
+                    </ng-template>
+                    <ng-template #j_19__default_text>
+                        {{ 'Listen, I\'ve had a pretty messed up day..' | translate }}
+                    </ng-template>
+                </p>
+                {{ '' | translate }}
+            </ion-label>
+            <ion-text _aio-0E4E33B5 #j_20 color="medium">
+                <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_20__text')" [ngIfElse]="j_20__default_text">
+                    {{__getMapping(currentItem, 'j_20__text', '', false) | translate}}
+                </ng-template>
+                <ng-template #j_20__default_text>
+                    {{ '9:30 am' | translate }}
+                </ng-template>
+            </ion-text>
+        </ion-item>
+        <ion-list-header _aio-10A0B78D #j_21 (click)="go()">
+            <ion-label _aio-AEB5599E #j_22>
+                <h1 _aio-90FA8278 #j_23>
+                    <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_23__text')" [ngIfElse]="j_23__default_text">
+                        {{ '' | translate }}
+                    </ng-template>
+                    <ng-template #j_23__default_text>
+                        {{ 'Online' | translate }}
+                    </ng-template>
+                </h1>
+                {{ '' | translate }}
+            </ion-label>
+        </ion-list-header>
+        <ion-item _aio-50BC4C46 #j_24 *ngFor="let currentItem of __getMapping(currentItem, 'j_24', []);"
+        button="true" detail="false">
+            <ion-avatar _aio-7729A6DB slot="start">
+                <img #j_25 src="{{__getMapping(currentItem, 'j_25__imageSrc', 'assets/images/poe.jpg', false)}}"
+                alt="{{ 'Image error' | translate }}">
+            </ion-avatar>
+            <ion-label _aio-734C9088 #j_26>
+                <h2 _aio-1135E3B0 #j_27>
+                    <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_27__text')" [ngIfElse]="j_27__default_text">
+                        {{__getMapping(currentItem, 'j_27__text', '', false) | translate}}
+                    </ng-template>
+                    <ng-template #j_27__default_text>
+                        {{ 'Poe' | translate }}
+                    </ng-template>
+                </h2>
+                <h3 _aio-185CA7F3 #j_28>
+                    <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_28__text')" [ngIfElse]="j_28__default_text">
+                        {{__getMapping(currentItem, 'j_28__text', '', false) | translate}}
+                    </ng-template>
+                    <ng-template #j_28__default_text>
+                        {{ 'New Ride' | translate }}
+                    </ng-template>
+                </h3>
+                <p _aio-26D21F3B #j_29>
+                    <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_29__text')" [ngIfElse]="j_29__default_text">
+                        {{__getMapping(currentItem, 'j_29__text', '', false) | translate}}
+                    </ng-template>
+                    <ng-template #j_29__default_text>
+                        {{ 'I just upgraded my X-Wing. Next time...' | translate }}
+                    </ng-template>
+                </p>
+                {{ '' | translate }}
+            </ion-label>
+            <ion-text _aio-5C210791 #j_30 color="medium" [class.aioHidden]="!__getMapping(currentItem, 'j_30__visible', true)">
+                <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_30__text')" [ngIfElse]="j_30__default_text">
+                    {{ '' | translate }}
+                </ng-template>
+                <ng-template #j_30__default_text>
+                    {{ '4:10 pm' | translate }}
+                </ng-template>
+            </ion-text>
+        </ion-item>
+    </ion-list>
+    <aio-tester-buttons slot="fixed">
+    </aio-tester-buttons>
+</ion-content>

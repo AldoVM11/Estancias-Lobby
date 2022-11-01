@@ -1,0 +1,300 @@
+<ion-header _aio-B55B568D class="ion-no-border">
+    <ion-toolbar _aio-10C3FA22 #j_142 color="secondary">
+        <ion-title _aio-53DFF23D #j_143>
+            {{ 'Perfil' | translate }}
+        </ion-title>
+        <ion-buttons #j_144 slot="end" collapse="true">
+            <ion-button _aio-342F1DAD #j_145 expand="block" (click)="editbuttonClick__j_145($event, currentItem)"
+            [class.aioHidden]="!__getMapping(currentItem, 'j_145__visible', true)">
+                <ion-icon #j_145__icon name="pencil-sharp">
+                </ion-icon>
+                {{ '' | translate }}
+            </ion-button>
+            <ion-button _aio-3BF5DD76 #j_146 expand="block" (click)="cancelbuttonClick__j_146($event, currentItem)"
+            [class.aioHidden]="!__getMapping(currentItem, 'j_146__visible', true)">
+                {{ 'Cancelar' | translate }}
+            </ion-button>
+        </ion-buttons>
+        <ion-buttons #j_147 slot="start" collapse="true">
+            <ion-back-button _aio-9FF95D9F #j_148 text="{{ '' | translate }}">
+            </ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content _aio-EFAC7B93>
+    <div _aio-C5B70B1A #j_82>
+    </div>
+    <ion-avatar _aio-24A09939 class="img">
+        <img #j_83 src="{{__getMapping(currentItem, 'j_83__imageSrc', 'assets/images/avatar.jpg', false)}}"
+        alt="{{ 'Image error' | translate }}">
+    </ion-avatar>
+    <label _aio-5A01BDFB #j_84 class="icon" [class.aioHidden]="!__getMapping(currentItem, 'j_84__visible', true)">
+        <ion-icon _aio-693351DA #j_85 name="camera" size="large" class="myicon" src="assets/images/camera.svg">
+        </ion-icon>
+        <ion-input _aio-422B29C3 #j_86 accept="image/jpeg, image/png" name="Input3" placeholder="{{ 'Enter text' | translate }}"
+        type="file" (ionChange)="fileinputIonChange__j_86($event, currentItem)" [class.aioHidden]="!__getMapping(currentItem, 'j_86__visible', true)">
+        </ion-input>
+    </label>
+    <div _aio-5E78A462 #j_87 [class.aioHidden]="!__getMapping(currentItem, 'j_87__visible', true)">
+        <span _aio-D9DDDC9F #j_88>
+            <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_88__text')" [ngIfElse]="j_88__default_text">
+                {{__getMapping(currentItem, 'j_88__text', '', false) | translate}}
+            </ng-template>
+            <ng-template #j_88__default_text>
+                {{ 'John' | translate }}
+            </ng-template>
+        </span>
+        <span _aio-E446C3B4 #j_89>
+            <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_89__text')" [ngIfElse]="j_89__default_text">
+                {{__getMapping(currentItem, 'j_89__text', '', false) | translate}}
+            </ng-template>
+            <ng-template #j_89__default_text>
+                {{ 'Doe' | translate }}
+            </ng-template>
+        </span>
+        <ion-note _aio-E89BE2CF #j_90>
+            <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_90__text')" [ngIfElse]="j_90__default_text">
+                {{__getMapping(currentItem, 'j_90__text', '', false) | translate}}
+            </ng-template>
+            <ng-template #j_90__default_text>
+                {{ 'Product Designer' | translate }}
+            </ng-template>
+        </ion-note>
+        <ion-grid _aio-04870D49 #j_91>
+            <ion-row _aio-5C978983 #j_92>
+                <ion-col _aio-8012F10E #j_93 class="ion-text-left" size="4">
+                    <ion-text _aio-6C4C305A #j_94>
+                        <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_94__text')" [ngIfElse]="j_94__default_text">
+                            {{ '' | translate }}
+                        </ng-template>
+                        <ng-template #j_94__default_text>
+                            {{ 'Telefono o Celular:' | translate }}
+                        </ng-template>
+                    </ion-text>
+                </ion-col>
+                <ion-col _aio-F32ACCD6 #j_95 class="ion-text-left">
+                    <ion-text _aio-7B87F7A8 #j_96>
+                        <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_96__text')" [ngIfElse]="j_96__default_text">
+                            {{__getMapping(currentItem, 'j_96__text', '', false) | translate}}
+                        </ng-template>
+                        <ng-template #j_96__default_text>
+                            {{ '618 187 2213' | translate }}
+                        </ng-template>
+                    </ion-text>
+                </ion-col>
+            </ion-row>
+            <ion-row _aio-66C17E9E #j_97>
+                <ion-col _aio-B0EB29C9 #j_98 class="ion-text-left" size="4">
+                    <ion-text _aio-05C73364 #j_99>
+                        <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_99__text')" [ngIfElse]="j_99__default_text">
+                            {{ '' | translate }}
+                        </ng-template>
+                        <ng-template #j_99__default_text>
+                            {{ 'Email:' | translate }}
+                        </ng-template>
+                    </ion-text>
+                </ion-col>
+                <ion-col _aio-063375AD #j_100 class="ion-text-left">
+                    <ion-text _aio-D4F5CDFF #j_101>
+                        <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_101__text')" [ngIfElse]="j_101__default_text">
+                            {{__getMapping(currentItem, 'j_101__text', '', false) | translate}}
+                        </ng-template>
+                        <ng-template #j_101__default_text>
+                            {{ 'john.doe@email.com' | translate }}
+                        </ng-template>
+                    </ion-text>
+                </ion-col>
+            </ion-row>
+            <ion-row _aio-59E53D84 #j_102>
+                <ion-col _aio-860B3EDB #j_103 class="ion-text-left" size="4">
+                    <ion-text _aio-35719B14 #j_104>
+                        <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_104__text')" [ngIfElse]="j_104__default_text">
+                            {{ '' | translate }}
+                        </ng-template>
+                        <ng-template #j_104__default_text>
+                            {{ 'Genero:' | translate }}
+                        </ng-template>
+                    </ion-text>
+                </ion-col>
+                <ion-col _aio-400379CD #j_105 class="ion-text-left">
+                    <ion-text _aio-4FBDDACC #j_106>
+                        <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_106__text')" [ngIfElse]="j_106__default_text">
+                            {{__getMapping(currentItem, 'j_106__text', '', false) | translate}}
+                        </ng-template>
+                        <ng-template #j_106__default_text>
+                            {{ 'Male' | translate }}
+                        </ng-template>
+                    </ion-text>
+                </ion-col>
+            </ion-row>
+            <ion-row _aio-DB7E943C #j_107>
+                <ion-col _aio-DCBD9DCF #j_108 class="ion-text-left" size="4">
+                    <ion-text _aio-82856121 #j_109>
+                        <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_109__text')" [ngIfElse]="j_109__default_text">
+                            {{ '' | translate }}
+                        </ng-template>
+                        <ng-template #j_109__default_text>
+                            {{ 'Dia de Nacimiento:' | translate }}
+                        </ng-template>
+                    </ion-text>
+                </ion-col>
+                <ion-col _aio-425A241C #j_110 class="ion-text-left">
+                    <ion-text _aio-DB504618 #j_111>
+                        <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_111__text')" [ngIfElse]="j_111__default_text">
+                            {{__getMapping(currentItem, 'j_111__text', '', false) | translate}}
+                        </ng-template>
+                        <ng-template #j_111__default_text>
+                            {{ '01/01/1980' | translate }}
+                        </ng-template>
+                    </ion-text>
+                </ion-col>
+            </ion-row>
+            <ion-row _aio-ECE70901 #j_112>
+                <ion-col _aio-4DD6A32A #j_113 class="ion-text-left" size="4">
+                    <ion-text _aio-1CDF7546 #j_114>
+                        <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_114__text')" [ngIfElse]="j_114__default_text">
+                            {{ '' | translate }}
+                        </ng-template>
+                        <ng-template #j_114__default_text>
+                            {{ 'Direccion:' | translate }}
+                        </ng-template>
+                    </ion-text>
+                </ion-col>
+                <ion-col _aio-CD22C4E7 #j_115 class="ion-text-left">
+                    <ion-text _aio-C855F83C #j_116>
+                        <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_116__text')" [ngIfElse]="j_116__default_text">
+                            {{__getMapping(currentItem, 'j_116__text', '', false) | translate}}
+                        </ng-template>
+                        <ng-template #j_116__default_text>
+                            {{ '402 West Lake Forest St. Palm Beach Gardens, FL 33410' | translate }}
+                        </ng-template>
+                    </ion-text>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <form _aio-E5B16B77 #form="ngForm" #form_el [aioFormChange]="form" [class.aioHidden]="!__getMapping(currentItem, 'j_117__visible', true)">
+        <ion-item _aio-5FDC2E30 #j_118__ion4Item>
+            <ion-label _aio-5FDC2E30 #j_118__ion4Label position="stacked">
+                {{ 'Nombre(s) *' | translate }}
+            </ion-label>
+            <ion-input _aio-5FDC2E30 #j_118="ngModel" #j_118_el [ngModel] [value]="__getMapping(currentItem, 'j_118__value', '', false)"
+            name="FirstNameInput" placeholder="{{ 'Enter text' | translate }}" required="true"
+            aioControlValidation aioValidationShowMessage="true" (ionChange)="__setMapping($event, 'j_118__value')">
+            </ion-input>
+        </ion-item>
+        <ion-item _aio-A5AE0656 #j_119__ion4Item>
+            <ion-label _aio-A5AE0656 #j_119__ion4Label position="stacked">
+                {{ 'Apellidos *' | translate }}
+            </ion-label>
+            <ion-input _aio-A5AE0656 #j_119="ngModel" #j_119_el [ngModel] [value]="__getMapping(currentItem, 'j_119__value', '', false)"
+            name="LastNameInput" placeholder="{{ 'Enter text' | translate }}" readonly="false"
+            required="true" aioControlValidation aioValidationShowMessage="true" (ionChange)="__setMapping($event, 'j_119__value')">
+            </ion-input>
+        </ion-item>
+        <ion-item #j_120>
+            <ion-label #j_120__ion4Label position="stacked">
+                {{ 'Trabajo *' | translate }}
+            </ion-label>
+            <ion-select _aio-90AA32D4 #j_121="ngModel" #j_121_el [ngModel] [value]="__getMapping(currentItem, 'j_121__value', '', false)"
+            cancelText="{{ 'CANCEL' | translate }}" interface="action-sheet" name="JobSelect"
+            okText="{{ 'OK' | translate }}" placeholder="{{ 'Select' | translate }}" selectedText="{{ '' | translate }}"
+            required="true" aioControlValidation aioValidationShowMessage="true" (ionChange)="__setMapping($event, 'j_121__value')">
+                <ion-select-option #j_122 value="Product Designer">
+                    {{ 'Dueño' | translate }}
+                </ion-select-option>
+                <ion-select-option #j_123 value="Manager">
+                    {{ 'Sub Director' | translate }}
+                </ion-select-option>
+                <ion-select-option #j_124 value="value1">
+                    {{ 'Productor' | translate }}
+                </ion-select-option>
+                <ion-select-option #j_125 value="value2">
+                    {{ 'Marketing' | translate }}
+                </ion-select-option>
+                <ion-select-option #j_126 value="value3">
+                    {{ 'Clientela' | translate }}
+                </ion-select-option>
+                <ion-select-option #j_127 value="value4">
+                    {{ 'Otro(s)' | translate }}
+                </ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item _aio-8F4B246C #j_128__ion4Item>
+            <ion-label _aio-8F4B246C #j_128__ion4Label position="stacked">
+                {{ 'Telefono o Celular*' | translate }}
+            </ion-label>
+            <ion-input _aio-8F4B246C #j_128="ngModel" #j_128_el [ngModel] [value]="__getMapping(currentItem, 'j_128__value', '', false)"
+            name="PhoneInput" placeholder="{{ '+52 (000) 000-0000' | translate }}" readonly="false"
+            type="tel" required="true" aioControlValidation aioValidationShowMessage="true" (ionChange)="__setMapping($event, 'j_128__value')">
+            </ion-input>
+        </ion-item>
+        <ion-item _aio-650EDEDC #j_129__ion4Item>
+            <ion-label _aio-650EDEDC #j_129__ion4Label position="stacked">
+                {{ 'Email *' | translate }}
+            </ion-label>
+            <ion-input _aio-650EDEDC #j_129="ngModel" #j_129_el [ngModel] [value]="__getMapping(currentItem, 'j_129__value', '', false)"
+            name="EmailInput" placeholder="{{ 'Enter text' | translate }}" readonly="false" type="email"
+            required="true" aioControlValidation="email" aioValidationShowMessage="true" (ionChange)="__setMapping($event, 'j_129__value')">
+            </ion-input>
+        </ion-item>
+        <ion-item #j_130__ion4Item>
+            <ion-label #j_130__ion4Label position="stacked">
+                {{ 'Dia de Nacimiento' | translate }}
+            </ion-label>
+            <ion-datetime _aio-D94DE40F #j_130="ngModel" #j_130_el [ngModel] [value]="__getMapping(currentItem, 'j_130__value', '', false)"
+            name="Datetime1" displayFormat="MMM D, YYYY" placeholder="{{ 'Select date' | translate }}"
+            (ionChange)="__setMapping($event, 'j_130__value')">
+            </ion-datetime>
+        </ion-item>
+        <ion-item #j_131>
+            <ion-label #j_131__ion4Label position="stacked">
+                {{ 'Genero' | translate }}
+            </ion-label>
+            <ion-select _aio-6592CD7C #j_132="ngModel" #j_132_el [ngModel] [value]="__getMapping(currentItem, 'j_132__value', '', false)"
+            cancelText="{{ 'CANCEL' | translate }}" interface="action-sheet" name="GenderSelect"
+            okText="{{ 'OK' | translate }}" placeholder="{{ 'Select' | translate }}" selectedText="{{ '' | translate }}"
+            required="false" simpleMask="" (ionChange)="__setMapping($event, 'j_132__value')">
+                <ion-select-option #j_133 value="Male">
+                    {{ 'Hombre' | translate }}
+                </ion-select-option>
+                <ion-select-option #j_134 value="Female">
+                    {{ 'Mujer' | translate }}
+                </ion-select-option>
+                <ion-select-option #j_135 value="value5">
+                    {{ 'No Binario' | translate }}
+                </ion-select-option>
+                <ion-select-option #j_136 value="value6">
+                    {{ 'Prefiero no decirlo' | translate }}
+                </ion-select-option>
+                <ion-select-option #j_137 value="value8">
+                    {{ 'Otro(s)' | translate }}
+                </ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item _aio-9DADE18D #j_138__ion4Item>
+            <ion-label _aio-9DADE18D #j_138__ion4Label position="stacked">
+                {{ 'Direccion' | translate }}
+            </ion-label>
+            <ion-input _aio-9DADE18D #j_138="ngModel" #j_138_el [ngModel] [value]="__getMapping(currentItem, 'j_138__value', '', false)"
+            name="AddressInput" placeholder="{{ 'Enter text' | translate }}" readonly="false"
+            required="false" (ionChange)="__setMapping($event, 'j_138__value')">
+            </ion-input>
+        </ion-item>
+        <ion-button _aio-30C6CFDC #j_139 expand="block" (click)="savebuttonClick__j_139($event, currentItem)"
+        [disabled]="__getMapping(currentItem, 'j_139__disabled', form.invalid, undefined, true)">
+            {{ 'Guardar' | translate }}
+        </ion-button>
+        <div _aio-E8144BA2 #j_140>
+            <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_140__text')" [ngIfElse]="j_140__default_text">
+                {{ '' | translate }}
+            </ng-template>
+            <ng-template #j_140__default_text>
+                {{ 'Todos los campos marcados con * se deben de rellenar obligatoriamente para continuar.'
+                | translate }}
+            </ng-template>
+        </div>
+    </form>
+    <aio-tester-buttons slot="fixed">
+    </aio-tester-buttons>
+</ion-content>

@@ -1,0 +1,34 @@
+<ion-header _aio-5E842C1E>
+    <ion-toolbar _aio-4DFD37FD #j_77>
+        <ion-title _aio-4D53992B #j_78>
+            {{ 'Buscar Ayuda' | translate }}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content _aio-10953395>
+    <ion-searchbar _aio-28F75A90 #j_69 cancelButtonText="{{ '' | translate }}" placeholder="{{ '' | translate }}"
+    (ionChange)="searchIonChange__j_69($event, currentItem)">
+    </ion-searchbar>
+    <ion-list _aio-2C3ABBEE #j_70>
+        <ion-item _aio-DD75682B #j_71 *ngFor="let currentItem of __getMapping(currentItem, 'j_71', []);">
+            <ion-label _aio-578D26D0 #j_72>
+                {{__getMapping(currentItem, 'j_72__text', 'New York', false) | translate}}
+            </ion-label>
+        </ion-item>
+    </ion-list>
+    <ion-text _aio-21425B7A #j_73 [class.aioHidden]="!__getMapping(currentItem, 'j_73__visible', true)">
+        <ng-template [ngIf]="__isPropertyInMapping(currentItem, 'j_73__text')" [ngIfElse]="j_73__default_text">
+            {{ '' | translate }}
+        </ng-template>
+        <ng-template #j_73__default_text>
+            {{ 'Nothing was found' | translate }}
+        </ng-template>
+    </ion-text>
+    <agm-map #j_74 [latitude]="40.1451" [longitude]="-99.6680" [fullscreenControl]="true"
+    [gestureHandling]="'auto'" [mapTypeId]="'hybrid'">
+        <agm-marker #j_75 [latitude]="40.1451" [longitude]="-99.6680">
+        </agm-marker>
+    </agm-map>
+    <aio-tester-buttons slot="fixed">
+    </aio-tester-buttons>
+</ion-content>
